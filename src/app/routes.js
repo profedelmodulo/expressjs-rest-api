@@ -6,7 +6,7 @@ routes.get('/', (req, res) => {
 });
 
 // http://localhost:3030/api/users and nested routes
-const userRoutes = require('./objects/user').routes;
+const userRoutes = require('../objects/user/user.routes');
 routes.use('/users', userRoutes);
 
 module.exports = routes;
