@@ -1,3 +1,5 @@
+[![Dependency Status](https://david-dm.org/johnchar/restapi/status.svg)](https://david-dm.org/johnchar/restapi)
+
 # restapi
 A RESTful API starter kit with JWT authentication
 ## Installation
