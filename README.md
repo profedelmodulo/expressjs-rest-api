@@ -1,6 +1,6 @@
 [![Dependency Status](https://david-dm.org/johnchar/restapi/status.svg)](https://david-dm.org/johnchar/restapi)
 
-# restapi
+# back-end
 A RESTful API starter kit with JWT authentication
 ## Installation
 1. Clone the repo
