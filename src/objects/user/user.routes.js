@@ -1,5 +1,5 @@
 const userRoutes = require('express').Router();
-const isAuth = require('../../app/auth').isAuth;
+const isAuth = require('../../auth').isAuth;
 const userController = require('./user.controller');
 
 // http://localhost:3030/api/users

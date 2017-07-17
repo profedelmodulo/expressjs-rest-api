@@ -18,7 +18,7 @@ const jwt = require('jsonwebtoken');
 
 // Authenticate using email and password and respond with a JWT
 
-    const userModel = require('../../objects/user/user.model');
+    const userModel = require('../objects/user/user.model');
 
     const authUser = (req, res) => {
         const email = req.body.email;
