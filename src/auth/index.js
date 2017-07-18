@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 // Authentication middleware
 
     const isAuth = (req, res, next) => {
-        const token = req.body.token || req.headers['x-access-token'];
+        const token = req.headers['x-access-token'];
         if (!token) return res.status(403).json({ message: 'You need to provide a token to access this resource.' });
         jwt.verify(token, process.env.JWT_SECRET, (err, jwt_payload) => {
             if (err) return res.json({ message: err.message });
