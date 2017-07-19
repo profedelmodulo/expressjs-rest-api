@@ -1,12 +1,19 @@
-const userRoutes = require('express').Router();
-const isAuth = require('../../auth').isAuth;
-const userController = require('./user.controller');
+/**
+ * @file Defines the user routes and connects them with the appropriate controller.
+ * @author John Char <yannosx@gmail.com> 
+ */
 
-// http://localhost:3030/api/users
-    userRoutes
-        .get('/', isAuth, (req, res) => {
-            res.send('All users.');
-        })
-        .post('/', userController.createUser);
+// Dependencies
+    const userRoutes = require('express').Router();
+    const isAuth = require('../../auth').isAuth;
+    const userController = require('./user.controller');
+// =============
 
-module.exports = userRoutes;
+// Connecting user routes to user controllers
+    module.exports.userRoutes
+        .post('/', userController.createUser)                  // creates a new user
+        .get('/:id', isAuth, userController.getSingleUser)     // returns a single user
+        .get('/', isAuth, userController.getAllUsers)          // returns all users
+        .put('/:id', isAuth, userController.updateUser)        // updates a single user
+        .delete('/:id', isAuth, userController.deleteUser);    // deletes a signle user
+// ==========================================
