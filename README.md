@@ -26,8 +26,8 @@ npm install
     3. Pass the token in the Headers of a request as `x-access-token` to access protected endpoints.
 
 ## TODOs
-    1. Add logic to some empty functions in `src/objects/user/user.controller.js`
-    2. Add unit tests
+1. Add logic to some empty functions in `src/objects/user/user.controller.js`
+2. Add unit tests
 
 ## Contributing
 1. Fork it!
