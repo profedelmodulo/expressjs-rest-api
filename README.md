@@ -6,7 +6,7 @@ Simple RESTful API starter kit with JWT authentication
 1. Clone the repo
 
 ```
-git clone https://github.com/johnchar/restapi
+git clone https://github.com/johnchar/expressjs-rest-api
 ```
 2. Install npm dependencies
 
