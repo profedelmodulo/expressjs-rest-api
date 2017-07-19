@@ -18,7 +18,12 @@ npm install
 > There is a `.env.example` file included, it needs to be renamed to `.env` which includes some variables that need to be set according to your environment. Some example variables include the `PORT` number  and the `MongoDB` URI.
 
 ## Usage
-TODO: Write usage instructions
+
+* Authentication Flow
+
+    1. Send a POST request with an `email` and `password` as parameters to `/api/users` to create a new user.
+    2. Send a POST request with user credentials as parameters to `/api/auth` and receive a token.
+    3. Pass the token in the Headers of a request as `x-access-token` to access protected endpoints.
 
 ## Contributing
 1. Fork it!
