@@ -1,5 +1,5 @@
 {
-  "name": "back-end",
+  "name": "expressjs-rest-api",
   "version": "1.0.0",
   "description": "",
   "main": "./src/app/api.js",
