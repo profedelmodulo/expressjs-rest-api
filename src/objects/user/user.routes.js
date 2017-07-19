@@ -10,10 +10,12 @@
 // =============
 
 // Connecting user routes to user controllers
-    module.exports.userRoutes
-        .post('/', userController.createUser)                  // creates a new user
-        .get('/:id', isAuth, userController.getSingleUser)     // returns a single user
-        .get('/', isAuth, userController.getAllUsers)          // returns all users
-        .put('/:id', isAuth, userController.updateUser)        // updates a single user
-        .delete('/:id', isAuth, userController.deleteUser);    // deletes a signle user
+userRoutes
+    .post('/', userController.createUser)                  // creates a new user
+    .get('/:id', isAuth, userController.getSingleUser)     // returns a single user
+    .get('/', isAuth, userController.getAllUsers)          // returns all users
+    .put('/:id', isAuth, userController.updateUser)        // updates a single user
+    .delete('/:id', isAuth, userController.deleteUser);    // deletes a signle user
 // ==========================================
+
+module.exports = userRoutes;
