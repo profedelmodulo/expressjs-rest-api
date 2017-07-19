@@ -1,7 +1,7 @@
 [![Dependency Status](https://david-dm.org/johnchar/restapi/status.svg)](https://david-dm.org/johnchar/restapi)
 
-# back-end
-A RESTful API starter kit with JWT authentication
+# expressjs-rest-api
+Simple RESTful API starter kit with JWT authentication
 ## Installation
 1. Clone the repo
 
@@ -24,6 +24,10 @@ npm install
     1. Send a POST request with an `email` and `password` as parameters to `/api/users` to create a new user.
     2. Send a POST request with user credentials as parameters to `/api/auth` and receive a token.
     3. Pass the token in the Headers of a request as `x-access-token` to access protected endpoints.
+
+## TODOs
+    1. Add logic to some empty functions in `src/objects/user/user.controller.js`
+    2. Add unit tests
 
 ## Contributing
 1. Fork it!
